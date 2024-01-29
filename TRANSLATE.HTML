@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+<style>
+
+.ad{
+    outline: 5px solid black;
+
+    padding: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.add{
+    background-color: yellow;
+    font-size: 50px;
+    border: 5px solid green;
+    border-radius: 15px;
+}
+
+</style>
+</head>
+<body>
+    <div  class="ad">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+            . Id rerum perspiciatis, consequatur magni neque iure 
+            vitae ex sit dolorem officia fugiat ducimus ut molesti
+            as, ullam eveniet sunt esse laudantium voluptatibus de
+            bitis harum! Ducimus cumque assumenda quibusdam quasi 
+            beatae. Illum ullam quam alias esse tempore. Minus, de
+            bitis! Quae dolorem, culpa suscipit dicta voluptatum de
+            bitis quas veritatis fugiat, cumque, ullam atque quasi
+             voluptatibus quisquam laboriosam distinctio! Architec
+             to id nihil repellat cupiditate consequuntur tenetur 
+             nemo nam, eveniet libero dolor voluptate non reiciend
+             is! Dolor dolorum nam, doloribus fugit unde ea quas n
+             eque nobis perferendis a har
+            um minima? Explicabo neque esse ullam, obcaecati null
+            a ad.</p>
+    </div>
+    <script>
+$(document).ready(function(){
+$('.ad').mouseenter(function(){
+    $(this).css('background',"pink");
+});
+$('.ad').click(function(){
+$(this).addClass('add');
+});
+
+
+
+});
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form events</title>
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+
+</head>
+<body bgcolor="lightyellow">
+    <FORM><fieldset>
+        <legend>
+            
+<H1 style="text-align:center">APPLICATION FORM OF ADIT</H1></legend>
+<DIV class="AA"></DIV>
+NAME : <input type="text"PLACEHOLDER="NAME" class="a"   required autocomplete="on" size="20" maxlength="20"><br><br>
+LAST NAME : <input type="text" class="a" PLACEHOLDER="LAST NAME"required autocomplete="on" size="20" maxlength="20"><br><br>
+DATE OF BIRTH : <input type="DATE"><br><br>
+TIME OF FILLING THIS FORM  : <input type="time"><br><br>
+<label  for="1"class="a">
+    GENDER<br><br>
+<input type="radio" value="MALE"NAME="CLASS"id="1"> MALE</label>
+<label for="2"><input type="radio"value="FEMALE"NAME="CLASS"id="2"> FEMALE</label>
+<label for="3"><input type="radio"value="OTHERS"NAME="CLASS"id="3">OTHERS<br><BR></label>
+
+FATHER'S NAME : <input type="text " class="a" PLACEHOLDER="FATHER'S NAME"required autocomplete="on"size="20" maxlength="20"><br><br>
+MOTHER's NAME : <input type="text" class="a"  PLACEHOLDER="MOTHER's NAME"required autocomplete="on" size="20" maxlength="20"><br><br>
+AGE  : <input type="number"class="a"  PLACEHOLDER="NUMBER"required autocomplete="on" size="20" maxlength="20"><br><br>
+<input type="range"><br><br>
+EMAIL : <input type="text" class="a" PLACEHOLDER="EMAIL"required autocomplete="on" size="20" maxlength="20"><br><br>
+PASSWORD : <input type="number" class="a" PLACEHOLDER ="PASSWORD"required autocomplete="ON" maxlength="20"><br><br>
+ADDRESS :   <textarea class="a" placeholder="ADDRESS"ROWS="5" cols="30"></textarea><br><br>
+YOUR CITY<BR><BR>
+<select class="c">
+    <optgroup label="CITY" ></optgroup>
+<option>KANPUR</option>
+<option>ALLAHABAD</option>
+<option>RURA</option>
+<option>PANKI</option>
+<option>DELHI</option>
+<option>BIHAR</option>
+
+</select>
+<br><br>
+PINCODE : <input type="number" class="a" PLACEHOLDER ="PINCODE"required autocomplete="ON" maxlength="20"><br><br>
+<br><br>
+QUALIFICATION <br><br>
+<input type="checkbox">10<sup>th</sup><br><br>
+<input type="checkbox">12<sup>th</sup><br><br>
+<input type="checkbox">GRADUTE<br><br>
+<input type="checkbox">MASTER<br><br>
+<input type="FILE"> <BR><br>
+
+
+ 
+
+
+
+<input type="submit"><br><br>
+<input type="reset"><br><br>
+</fieldset>
+    </FORM>
+
+
+<script>
+$(document).ready(function () {
+    $(".a").focus(function () {
+        $(this).css("border","5px solid blue");
+        $(this).css("border-radius","10px");
+        $(this).css("background-color","pink");
+        
+    });
+    
+$(".a,.d").blur(function () {
+$(this).css("background-color","");
+$(this).css("border-radius","0px");
+ $(this).css("border","");
+});
+
+$(".b").focus(function () {
+        $(this).css("border","5px solid black");
+        $(this).css("border-radius","5px");
+        $(this).css("background-color","skyblue");
+       
+    });
+    
+$(".b").blur(function () {
+$(this).css("background-color","red");
+$(this).css("border-radius","0px");
+        $(this).css("text-align","");
+    
+});
+$(".c").css("background-color","green");
+});
+$(".a ").select(function () {
+    $(this).css("background-color","yellow");
+    
+});
+$(".c").change(function () {
+    $(this).css("background-color","red");
+    
+});
+
+
+</script>
+
+
+
+
+
+
+    
+</body>
+</html>

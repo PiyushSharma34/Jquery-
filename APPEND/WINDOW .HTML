@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+<style>
+.a{
+    background-color: coral;border:  5px inset blue;
+    font-size: 20px;padding: 20px;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+<div class="a"><h>PIYUSH </h><p>Lorem ipsum, 
+    dolor sit amet consectetur adipisicing elit. Deleniti voluptate quod plac
+    eat sapiente reiciendis recusandae itaque assumenda culpa sint ipsum!</p></div>
+
+
+
+<script>
+$(document).ready(function(){
+    $(".a").mouseenter(function(){
+        $(this).append("<i>HELLO PIYUSH BHARADWAJ</i><br>");
+    });
+    $(".a").mouseleave(function(){
+        $(this).prepend("<b>HELLO PIYUSH BHARADWAJ</b><br>");
+    });
+    $(".a").mouseleave(function(){
+        $(this).after("<b>HELLO PIYUSH BHARADWAJ</b><br>");
+    });
+    $(".a").mouseleave(function(){
+        $(this).before("<b>HELLO PIYUSH BHARADWAJ</b><br>");
+    });
+
+   
+});
+
+$(document).ready(function(){
+$(".B").mouseenter(function(){
+    $(this).wrap("<i></i>");
+});
+
+});
+ 
+
+
+
+</script>
+
+
+
+<h1 class="B">PIYUSH BHARADWAJ</h1>
+</body>
+</html>

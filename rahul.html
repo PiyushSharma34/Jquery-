@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+    <style>
+.a{height: auto; width: auto;border: 10px ridge yellow;
+    background-color: peru;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="a">
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, impedit.</p>
+
+
+    </div>
+<script>
+$(document).ready(function(){
+$(".a").click(function(){
+$(this).css("background","red");
+$(this).css("border","2px solid black");
+
+});
+$(".a").dblclick(function(){
+$(this).css("background","yellow");
+
+
+});
+$(".a").mouseenter(function(){
+$(this).css("background","brown");
+});
+});
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

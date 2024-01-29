@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <div class="f"  style="border: 5px solid red;height: auto; width: auto;">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia se
+qui quo at temporibus? Vel eum sint laboriosam quaerat deserunt do
+lore! Deserunt, nam nihil sequi consequatur obcaecati repellendus al
+ias illo ratione excepturi omnis. Iusto hic ex aut. Numquam facere d
+eserunt recusandae fugit magn
+am? Voluptatibus sunt molestias quae temporibus dolorem blanditiis sed.
+    </div>
+
+<button class="fi">hide</button>
+<button class="fo">show</button>
+<button class="ft">oggle</button>
+    <script>
+$(document).ready(function () {
+    $(".fi").mouseenter(function () {
+$(".f").hide("slow");      
+    });
+    $(".fo").mouseenter(function () {
+$(".f").show("slow");      
+    });
+    $(".ft").mousemove(function () {
+$(".f").toggle("slow");      
+    });
+});
+
+
+    </script>
+</body>
+</html>

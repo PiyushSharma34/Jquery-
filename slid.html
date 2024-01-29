@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="a" style="border: 10px solid blue;">
+        <h1>piyus bhradwaj</h1>
+        Lorem ipsum dolor sit amet c
+        onsectetur adipisicing elit. Voluptatum minima officiis accusan
+        tium minus ea deleniti blanditiis rem numquam fuga sit dolor od
+        it earum libero quisquam, nam quod ex maiores consequuntur aliq
+        uam eligendi voluptate doloribus esse? Deleniti, commodi. Nihil 
+        quam aliquid eaque et quas, ex veritatis odio illo distinctio 
+        similique natus quibusdam voluptas aperiam! Soluta corrupti eve
+        niet recusandae delectus dicta minus, quae debitis exercitation
+        em sunt illum eligendi odio vero expedita tempora ea tempore pla
+        ceat autem aspernatur libero quidem quas amet? Repellendus magna
+        m cumque illum temporibus debitis, reiciendis exercitationem vol
+        uptas reprehenderit accusantium? Maiores quis iure expedita dele
+        ctus doloremque cumque veritatis mollitia quasi accusantium debi
+        tis beatae ea illo quibusdam, consequuntur similique nulla quae 
+        officiis a nisi iste quas optio ab asperiores! Ipsa dolores alia
+        s ipsum maxime similique earum pariatur itaque minus, est accusa
+        ntium, commodi perspiciatis. Possimus voluptatum non hic, amet m
+        aiores praesentium iusto fuga unde fugiat magnam atque reprehend
+        erit quam! Rerum, repudiandae excepturi doloremque at dolore ab
+        ? Quis quae ea quibusdam nisi dicta velit expedita pariatur co
+        sequuntur, iure cum voluptatibus modi suscipit tempore nostrum 
+        perferendis fugit. Ab, dolor cupiditate amet quas dolores optio
+         dolore corrupti assumenda earum. Illo, dignissimos, tenetur eo
+         s tempora ipsam nemo fuga quos doloremque eius magnam recusand   
+ae neque quo nesciunt?</div>
+
+<button id="sd"> slid down</button>
+<button id="su"> slid up</button>
+<button id="st"> slidtoggle</button>
+<script>
+$(document).ready(function () {
+    $("#sd").mouseenter(function () {
+        $(".a").slideDown("slow");
+    });
+    $("#su").mouseenter(function () {
+        $(".a").slideUp("slow");
+    });
+    $("#st").mouseover(function () {
+        $(".a").slideToggle("slow");
+        
+    });
+});
+
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <form>
+<fieldset>
+<legend>
+    <h1>APPLICATION FORM</h1>
+</legend>
+NAME : <input type="text"placeholder="NAME" autocomplete="ON" class="a"><BR><BR>
+FATHER NAME : <input type="text" placeholder="FATHER NAME" class="a"><BR><BR>
+MOTHER NAME : <input type="text" placeholder="MOTHER NAME" class="a"><BR><BR>
+
+
+
+
+
+
+<button onclick="ram()">submit</button>
+
+</fieldset>
+
+
+    </form>
+<script>
+$(document).ready(function(){
+    $(".a").focus(function(){
+$(this).css("background-color","red");
+$(this).css("border","10px solid black");
+$(this).css("color","blue");
+$(this).css("text-align","center");
+    });
+
+
+    
+$(".a").blur(function(){
+$(this).css("background-color","");
+$(this).css("border","");
+
+});
+$(".a").select(function(){
+$(this).css("background-color","yellow");
+
+
+});
+
+
+});
+
+function ram(){
+    document.write("<h1>FORM SUBMITTED SUCCESSFULLY</h1>");
+}
+
+
+</script>
+
+
+
+</body>
+</html>

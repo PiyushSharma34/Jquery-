@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+<style>
+.DIV{
+background-color: yellow;
+border: 5PX solid red;
+padding: 20px;
+color: blue;
+height: auto;
+width: auto;
+
+
+}
+
+
+
+
+</style>
+
+</head>
+<body>   
+<div class="DIV">
+<h1>PIYUSH SHARMA</h1>
+<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellat perferendis nisi autem expedita hic ver
+    o excepturi, sit quasi eligendi voluptatibus sequ
+     corporis delectus praesentium ducimus quo minus. A d
+     icta est velit doloribus quidem eaque dignissimos, l
+     abore veritatis molestias magnam enim, officiis alias
+      accusamus quas expedita sequi nisi id in.</P>
+</div>
+<script>
+$(document).ready(function(){
+$("p").mouseenter(function(){
+$(this).append("<h2>NSTI ALLAHABAD</h2>");
+
+});
+$("DIV").mouseleave(function(){
+$(this).prepend("<h2>NSTI ALLAHABAD PIYUSH</h2>");
+});
+
+
+$("DIV").mouseleave(function(){
+
+$(this).after("<h2>NSTI ALLAHABAD PIYUSH</h2>")
+});
+
+
+
+$("DIV").mouseleave(function(){
+
+$(this).before("<h2>NSTI ALLAHABAD PIYUSH</h2>")
+});
+
+});
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

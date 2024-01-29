@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>true false</title>
+
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+
+
+<style>
+
+    *{
+margin-top: 20px;
+    }
+.box,.box1,.box2{
+    height: 230px;
+    width: 250px;
+    border: 3px solid black;
+   display: inline-block;
+   margin: -2px;
+   text-align: center;font-size: 250px;
+   padding-top: 80px;
+color: blueviolet;
+
+}
+.box:nth-child(odd){
+    background-color: rgb(186, 186, 124);
+}
+.box1:nth-child(even){
+    background-color: rgb(186, 186, 124);
+}
+.box2:nth-child(odd){
+    background-color: rgb(186, 186, 124);
+}
+
+
+</style>
+
+
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div><br>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div><br>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+
+
+
+<script>
+$(document).ready(function(){
+    $(".box").click(function(){
+        $(this).text("*");
+    });
+    $(".box").dblclick(function(){
+        $(this).text("");
+    });
+    
+
+
+
+});
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

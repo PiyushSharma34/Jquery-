@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1><I>THIS IS JQUERY KEYBOARD  EVENTS</I></h1><br>
+   NAME : <input type="text" class="a" placeholder="NAME"  required > <br><br>
+   FATHER NAME : <input type="text" class="a" placeholder=" FATHER NAME"  required > <br><br>
+   MOTHER NAME : <input type="text" class="a" placeholder="   MOTHER NAME"  required > <br><br>
+  CITY : <input type="text" class="a" placeholder="  CITY"  required > <br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button class="">SUBMIT</button><BR><BR>
+<button class="">RESET</button>
+
+<script>
+$(document).ready(function(){
+    $(".a").keypress(function(){
+        $(this).css("background","yellow");
+        $(this).css("border","10px ridge black");
+
+
+    });
+    $(".a").keyup(function(){
+        $(this).css("background","coral");
+        $(this).css("border","1px ridge green");
+    });
+});
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

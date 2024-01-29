@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse event</title>
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+<style>
+.aa{
+height: 200px ;width: 200px;border: 10px solid red;
+
+}
+.BB{
+
+    height: 200px ;width: 200px;border: 10px solid blue;
+
+
+}
+
+
+</style>
+
+</head>
+<body>
+    
+<div class="aa">
+<i><u><h1>PIYUSH SHARMA </h1></i></u>
+
+</div>
+<br>
+<div class="BB">
+    <i><u><h1>NSTI ALLAHABAD</h1></i></u>
+    
+    </div>
+    
+
+
+    <script>
+$(document).ready(function () {
+ $(".aa").mouseenter(function () {
+    $(".aa").css("background-color","yellow");
+    
+ })   ;
+ $(".aa").mouseleave(function () {
+    $(".aa").css("background-color","red");
+
+
+    
+ });
+
+var a = $(".aa").html();
+console.log(a);
+
+
+
+});
+$(document).ready(function () {
+    $(".BB") .click(function () {
+        $(this).css("background-color","green");
+        
+    });
+    $(".BB") .dblclick(function () {
+        $(this).css("font-size","100px");
+        
+    });
+    $(".BB").contextmenu(function () {
+        $(this).css("border-radius","30px");
+        
+    });
+});
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

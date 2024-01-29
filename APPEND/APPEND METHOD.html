@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+<style>
+.aa{
+height: auto;
+width: auto;
+border: 5px solid red;
+margin-top: 90px;
+}
+
+
+
+</style>
+
+
+
+</head>
+<body>
+   <div class="aa">
+    <h1>piyush</h1>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit verita
+tis corporis itaque suscipit quis, quod unde earum, autem quae illum so
+luta dolorum voluptatibus sapiente eveniet quibusdam omnis dignissimos n
+eque similique modi aspernatur harum ullam. Doloribus, quam quo dolores 
+aperiam quidem tempore? Aperiam cons
+equuntur perferendis voluptas, commodi eum dolorum veritatis provident.
+
+
+   </div>
+    <script>
+$(document).ready(function () {
+    $(".aa").mouseenter(function () {
+        $(".aa").append("<B>RAHUL RAI KANPUR</B>");
+        
+    });
+    $(".aa").mouseleave(function () {
+        $(".aa").prepend("<U> PIYUSH BHARRADWAJ</U>");
+        
+    });
+    $(".aa").mousemove(function() {
+        $(this).after("<h1> NSTI ALLAHABAD</h1>");
+        
+    });
+$(".aa").mousemove(function () {
+    $(this).before("<u>STUDENT ALLAHABAD</u>");
+    
+});
+
+
+
+});
+
+
+
+    </script>
+
+
+
+</body>
+</html>

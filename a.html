@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+
+<style>
+    .d{
+color: red;
+height: 200px;
+width: 200px;
+border: 5px solid black;
+display: none;
+}
+</style>
+
+
+</head>
+<body>
+    <h1>HELLO PIYUSH</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing e
+        lit. Perspiciatis ipsam nulla totam dignissimos omnis n
+        eque non rem! Nisi, tempore totam.</p>
+<center>
+<div class="d"><h3>Show Data</h3></div></center>
+    <script>
+$(document).ready(function(){
+    $("h1").click(function(){
+        $(this).css({"font-size":"20px","background":"yellow"})
+        // $(this).append("<h3>RAJA RAJ KUMAR</h3>")
+
+    });
+$("h1").click(function(){
+    $(".d").fadeIn("slow")
+
+});
+$("h1").click(function(){
+    $("p").clone().append(".d");
+
+});
+
+    
+});
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div style="height: auto;width: auto;border: 5px solid red;">
+<h1>hello piyush bharadwaj</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam incidunt fuga, nulla omnis eius ex voluptate nobis consequatur in nam! Ad consequuntur minus quod saepe aspernatur deserunt minima voluptatum, maxime assumenda! Animi consequatur fuga ratione eaque neque tempore illo veniam, nam distinctio consequuntur, obcaecati dolor illum placeat. Aliquid repellat commodi totam unde quasi libero quo sit saepe? Ullam quo deleniti vero corrupti consequuntur culpa dolore rem ex, quam autem doloremque id! Aliquid labore ipsum ullam assumenda sit sapiente rem id, facilis libero, ipsa sequi illum quod eligendi? Odit in eaque odio? Error accusantium non maiores perferendis incidunt. Nobis, aperiam? Sit minus impedit ab eligendi ipsum, aut ducimus rerum! Eius provident blanditiis sunt cumque ipsum eum ullam pariatur consequatur cum, labore culpa maxime reiciendis molestias perspiciatis. Explicabo vel autem veritatis eius necessitatibus nemo error nesciunt ullam? Officiis quis ad saepe officia porro magni veritatis consequuntur ratione quam, recusandae pariatur voluptatibus voluptatum, natus vitae architecto fugiat perspiciatis, dolorem aliquam. Nemo fuga a ad similique ipsam dicta unde saepe, qui nobis, labore molestiae maiores possimus eaque perferendis ea blanditiis modi excepturi? Officiis iste numquam deleniti doloribus iusto non praesentium tenetur earum nihil voluptatum quidem reprehenderit ducimus, nostrum soluta accusamus unde esse veniam aspernatur.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, quo eaque assumenda soluta eum eveniet tenetur aspernatur voluptates perspiciatis nihil, corrupti tempore. Alias itaque voluptates, numquam excepturi consectetur magni cupiditate. ipsum dolor sit amet consectetur adipisicing elit. Facere, porro?</p>
+
+    </div>
+<script>
+$(document).ready(function(){
+$("div").mouseenter(function(){
+$(this).append("<h1>PIYUSH BHARADWAJ</h1>");
+
+
+});
+
+$("div").mouseleave(function(){
+$(this).prepend("GOOD MORNING PIYUSH ");
+
+
+});
+$("div p").mouseenter(function(){
+$(this).wrap("<h1></h1>");
+
+
+});
+$("div p").mouseleave(function(){
+$(this).remove();
+
+
+});
+});
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

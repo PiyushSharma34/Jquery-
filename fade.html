@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="a" style="border: 10px inset blue;">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta deleniti sapiente maxime necessitatibus nihil beatae natus laudantium quas optio, voluptate ea, quia alias officia dolor inventore. Facere, voluptatem omnis reiciendis rerum quaerat corporis beatae amet excepturi in veniam rem aliquid quasi delectus vero quae voluptas numquam nisi similique perspiciatis nihil reprehenderit aliquam explicabo. Suscipit qui dolor, sit saepe cum culpa ea similique neque mollitia ad optio totam consequatur velit quisquam placeat ut in quaerat, doloribus voluptatum ipsum, obcaecati reprehenderit officia vel fuga. Itaque ullam magni quis harum nam sit voluptatem blanditiis repudiandae quibusdam qui et saepe dolore dolorum sunt esse eos repellat debitis, ut eius rerum quam pariatur. Officia praesentium enim pariatur nostrum voluptas sapiente optio provident facilis dolorem incidunt excepturi, deleniti eligendi quisquam, omnis iusto temporibus sunt. Itaque culpa consectetur saepe, esse recusandae sequi voluptatem soluta quae, omnis dicta pariatur natus magnam error aut, quasi ea atque. Esse quidem cupiditate eveniet non optio aliquid deserunt minima nulla voluptatibus incidunt impedit eligendi praesentium quis ducimus distinctio reprehenderit vitae, at reiciendis consequatur officiis totam? Ab dolores sint error dignissimos reiciendis, rerum optio accusamus et. Culpa aut hic, ipsa deleniti dolore, cumque laborum sit consequatur veritatis saepe voluptatum cum placeat sunt provident.
+
+   </div> 
+   <button class="fi">fadein</button>
+   <button class="fo">fadeout</button>
+   <button class="ft">fadetoggle</button>
+   
+<script>
+$(document).ready(function () {
+    $(".fo").mouseenter(function () {
+        $(".a").fadeOut("slow");
+        
+    });
+    $(".fi").mouseenter(function () {
+        $(".a").fadeIn("slow");
+        
+    });
+$(".ft").mouseover(function () {
+    $(".a").fadeToggle("slow");
+    
+});
+
+});
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
